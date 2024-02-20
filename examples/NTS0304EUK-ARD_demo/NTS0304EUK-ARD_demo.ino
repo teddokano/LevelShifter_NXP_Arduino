@@ -34,6 +34,7 @@
 /*
  * NOTE3: Control pins for LDOs
  * 
+ * FOR ARDUINO UNO R3...
  * LDO1 output voltage is controlled by D0, D1 and D4 pins on Arduino shield connector. 
  * Since D0 and D1 are shared with "Serial" library of Arduino SDK, the "Serial.print()" 
  * and "Serial.println()" will disturb the voltage. 
@@ -49,6 +50,9 @@
 //#define I2C_SETTING
 #define SERIAL_OUT_DISABLE
 
+#if defined(ARDUINO_UNOR4_MINIMA) || defined(ARDUINO_UNOR4_WIFI)
+#undef SERIAL_OUT_DISABLE
+#endif
 
 #ifdef I2C_SETTING
 AD5161_I2C dp;
@@ -80,6 +84,7 @@ void setup() {
 #else
   setting = 0b001;
   SPI.begin();
+  pinMode(SS, OUTPUT);  //  Required for UNO R4
 #endif  // I2C_SETTING
 }
 
