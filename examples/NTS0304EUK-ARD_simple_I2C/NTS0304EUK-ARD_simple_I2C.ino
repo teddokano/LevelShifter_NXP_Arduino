@@ -57,7 +57,7 @@ void loop() {
       read_value = dp;
       analog_value = analogRead(A0) * 5.0 / 1023.0;
 
-      Serial.print("Comm = I2C    LDO1 = 0.95V    LDO2 = ");
+      Serial.print("Comm = I2C    LDO1 = 0.95V(fixed)    LDO2 = ");
       Serial.print(ldo2.voltage(v2), 2);
       Serial.print("V    pot-meter read value = 0x");
       Serial.print(read_value, HEX);

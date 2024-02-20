@@ -6,7 +6,7 @@ Nts0304euk_Ard_LDO::~Nts0304euk_Ard_LDO(){}
 
 float Nts0304euk_Ard_LDO::voltage( void )
 {
-	return v_values[ ldo ];
+	return v_values[ *this ];
 }
 
 float Nts0304euk_Ard_LDO::voltage( int v )

@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "n",
   2: "nr",
   3: "nv~",
-  4: "lnv",
+  4: "nv",
   5: "l"
 };
 

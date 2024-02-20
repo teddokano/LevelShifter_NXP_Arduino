@@ -51,7 +51,6 @@ public:
 	
 private:
 	int				num;
-	BusInOut		ldo;
 	float			*v_values;
 
 };

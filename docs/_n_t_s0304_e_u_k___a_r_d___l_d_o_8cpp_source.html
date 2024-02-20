@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LevelShifter_NXP_Arduino<span id="projectnumber">&#160;0.9.1</span>
+   <div id="projectname">LevelShifter_NXP_Arduino<span id="projectnumber">&#160;0.9.2</span>
    </div>
    <div id="projectbrief">Temperature sensor device operation sample code for Arduino</div>
   </td>
@@ -95,7 +95,7 @@ $(function() { codefold.init(0); });
 <div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_nts0304euk___ard___l_d_o.html#a4c9c71e61ea39194ab809fbb06107a12">    7</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="class_nts0304euk___ard___l_d_o.html#a4c9c71e61ea39194ab809fbb06107a12">Nts0304euk_Ard_LDO::voltage</a>( <span class="keywordtype">void</span> )</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_nts0304euk___ard___l_d_o.html#ac99f2cbf6d5f5a42cc49db68f9f36f71">v_values</a>[ <a class="code hl_variable" href="class_nts0304euk___ard___l_d_o.html#a2ddbc5cb2b30c24ee9365ebfc184ce9a">ldo</a> ];</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_nts0304euk___ard___l_d_o.html#ac99f2cbf6d5f5a42cc49db68f9f36f71">v_values</a>[ *this ];</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
 </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -126,13 +126,12 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="aclass_nts0304euk___ard___l_d_o2_html_a57e50a14c8e1da7e07699fef4c90281e"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o2.html#a57e50a14c8e1da7e07699fef4c90281e">Nts0304euk_Ard_LDO2::~Nts0304euk_Ard_LDO2</a></div><div class="ttdeci">~Nts0304euk_Ard_LDO2()</div><div class="ttdef"><b>Definition</b> <a href="#l00023">NTS0304EUK_ARD_LDO.cpp:23</a></div></div>
 <div class="ttc" id="aclass_nts0304euk___ard___l_d_o2_html_adab425d4d6d2b72dedad94ae8983b773"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o2.html#adab425d4d6d2b72dedad94ae8983b773">Nts0304euk_Ard_LDO2::Nts0304euk_Ard_LDO2</a></div><div class="ttdeci">Nts0304euk_Ard_LDO2(int ldo_number=2, int pin0=2, int pin1=3, float *v_v=v2_values)</div><div class="ttdef"><b>Definition</b> <a href="#l00021">NTS0304EUK_ARD_LDO.cpp:21</a></div></div>
 <div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html">Nts0304euk_Ard_LDO</a></div><div class="ttdef"><b>Definition</b> <a href="_n_t_s0304_e_u_k___a_r_d___l_d_o_8h_source.html#l00022">NTS0304EUK_ARD_LDO.h:22</a></div></div>
-<div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html_a2ddbc5cb2b30c24ee9365ebfc184ce9a"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html#a2ddbc5cb2b30c24ee9365ebfc184ce9a">Nts0304euk_Ard_LDO::ldo</a></div><div class="ttdeci">BusInOut ldo</div><div class="ttdef"><b>Definition</b> <a href="_n_t_s0304_e_u_k___a_r_d___l_d_o_8h_source.html#l00054">NTS0304EUK_ARD_LDO.h:54</a></div></div>
 <div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html_a4ae3f627605c843d2294b5196aa8f960"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html#a4ae3f627605c843d2294b5196aa8f960">Nts0304euk_Ard_LDO::v1_values</a></div><div class="ttdeci">static float v1_values[v1_variation]</div><div class="ttdef"><b>Definition</b> <a href="_n_t_s0304_e_u_k___a_r_d___l_d_o_8h_source.html#l00025">NTS0304EUK_ARD_LDO.h:25</a></div></div>
 <div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html_a4c9c71e61ea39194ab809fbb06107a12"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html#a4c9c71e61ea39194ab809fbb06107a12">Nts0304euk_Ard_LDO::voltage</a></div><div class="ttdeci">float voltage(void)</div><div class="ttdef"><b>Definition</b> <a href="#l00007">NTS0304EUK_ARD_LDO.cpp:7</a></div></div>
 <div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html_a50b6a7b2508f470d7c6491c46aefc36e"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html#a50b6a7b2508f470d7c6491c46aefc36e">Nts0304euk_Ard_LDO::Nts0304euk_Ard_LDO</a></div><div class="ttdeci">Nts0304euk_Ard_LDO(int ldo_number, int pin0, int pin1, int pin2, float *v_v)</div><div class="ttdef"><b>Definition</b> <a href="#l00003">NTS0304EUK_ARD_LDO.cpp:3</a></div></div>
 <div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html_a64b99ca2ffd01df823713389b0a3f99a"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html#a64b99ca2ffd01df823713389b0a3f99a">Nts0304euk_Ard_LDO::v2_values</a></div><div class="ttdeci">static float v2_values[v2_variation]</div><div class="ttdef"><b>Definition</b> <a href="_n_t_s0304_e_u_k___a_r_d___l_d_o_8h_source.html#l00026">NTS0304EUK_ARD_LDO.h:26</a></div></div>
 <div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html_ac1cef8c3470b9eafb46692f7e7d8fce9"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html#ac1cef8c3470b9eafb46692f7e7d8fce9">Nts0304euk_Ard_LDO::~Nts0304euk_Ard_LDO</a></div><div class="ttdeci">~Nts0304euk_Ard_LDO()</div><div class="ttdef"><b>Definition</b> <a href="#l00005">NTS0304EUK_ARD_LDO.cpp:5</a></div></div>
-<div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html_ac99f2cbf6d5f5a42cc49db68f9f36f71"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html#ac99f2cbf6d5f5a42cc49db68f9f36f71">Nts0304euk_Ard_LDO::v_values</a></div><div class="ttdeci">float * v_values</div><div class="ttdef"><b>Definition</b> <a href="_n_t_s0304_e_u_k___a_r_d___l_d_o_8h_source.html#l00055">NTS0304EUK_ARD_LDO.h:55</a></div></div>
+<div class="ttc" id="aclass_nts0304euk___ard___l_d_o_html_ac99f2cbf6d5f5a42cc49db68f9f36f71"><div class="ttname"><a href="class_nts0304euk___ard___l_d_o.html#ac99f2cbf6d5f5a42cc49db68f9f36f71">Nts0304euk_Ard_LDO::v_values</a></div><div class="ttdeci">float * v_values</div><div class="ttdef"><b>Definition</b> <a href="_n_t_s0304_e_u_k___a_r_d___l_d_o_8h_source.html#l00054">NTS0304EUK_ARD_LDO.h:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
