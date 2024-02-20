@@ -41,6 +41,7 @@ void setup() {
   ldo1 = 4;
 
   SPI.begin();
+  pinMode(SS, OUTPUT);  //  Required for UNO R4
 }
 
 void loop() {

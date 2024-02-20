@@ -44,11 +44,14 @@ Examples are provided as scketch files.
 After library install, Choose menu on Arduino-IDE: `File`→`Examples`→`LevelShifter_NXP_Arduino`→ NTS0304EUK-ARD_demo
 
 
-This demo code will show **nothing** on terminal screen. 
+On **Arduino Uno R3**, this demo code will show **nothing** on terminal screen.  
 Since the LDO1 output voltage is controled by D0 and D1 pins, the `Serial` API to print characters on screen disturbs the behavior.  
 Again, **while the demo running, no screen update will be done**.  
 <U>To perform output all voltage variation on LDO1, the screen message needed to be disabled.</U>  
 While the demo, prove on the signal lines and monitor the waveform on an oscilloscope.  
+
+On **Arduino Uno R4**, such restriction is not exist.  
+The screen messages are available.  
 
 LDO1 and LDO2 can output several voltages. LDO1 voltage becomes the signal voltage on A-side of DUT and LDO2 voltage becomes B-side one.  
 - LDO1 (A-side, I²C signals on J8) output can be set 0.95V, 1.2V, 1.8V, 2.5V and 3.3V.  
