@@ -17,17 +17,13 @@
 
 #include "AD5161.h"
 #include "BusInOut.h"
+#include "NTS0304EUK_ARD_LDO.h"
 
 AD5161_SPI dp;
 
 BusInOut setting(5, A3, A2);
-BusInOut ldo1(0, 1, 4);
-BusInOut ldo2(2, 3);
-
-constexpr int v1_variation = 5;
-constexpr int v2_variation = 4;
-float v1_values[v1_variation] = { 1.2, 1.8, 2.5, 3.3, 0.95 };
-float v2_values[v2_variation] = { 1.8, 2.5, 3.3, 4.96 };
+Nts0304euk_Ard_LDO1 ldo1;
+Nts0304euk_Ard_LDO2 ldo2;
 
 void setup() {
   Serial.begin(115200);
@@ -51,7 +47,7 @@ void loop() {
   uint8_t read_value;
   float analog_value;
 
-  for (int v2 = 0; v2 < v2_variation; v2++) {
+  for (int v2 = 0; v2 < Nts0304euk_Ard_LDO::v2_variation; v2++) {
     ldo2 = v2;
 
     delay(800);  // wait voltages settle
@@ -62,7 +58,7 @@ void loop() {
       analog_value = analogRead(A0) * 5.0 / 1023.0;
 
       Serial.print("Comm = SPI    LDO1 = 0.95V    LDO2 = ");
-      Serial.print(v2_values[v2], 2);
+      Serial.print(ldo2.voltage(v2), 2);
       Serial.print("V    pot-meter read value = 0x");
       Serial.print(read_value, HEX);
       Serial.print("    pot-meter output = ");

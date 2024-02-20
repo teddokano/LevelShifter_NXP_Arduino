@@ -31,7 +31,7 @@
  * "D5": 0 to Disconnect CS and set address 0x5A, 1 to connrct CS to AD5161
  */
 
- /*
+/*
  * NOTE3: Control pins for LDOs
  * 
  * LDO1 output voltage is controlled by D0, D1 and D4 pins on Arduino shield connector. 
@@ -43,6 +43,7 @@
 
 #include "AD5161.h"
 #include "BusInOut.h"
+#include "NTS0304EUK_ARD_LDO.h"
 
 /* Option setings */
 //#define I2C_SETTING
@@ -56,13 +57,8 @@ AD5161_SPI dp;
 #endif  // I2C_SETTING
 
 BusInOut setting(5, A3, A2);
-BusInOut ldo1(0, 1, 4);
-BusInOut ldo2(2, 3);
-
-constexpr int v1_variation = 5;
-constexpr int v2_variation = 4;
-float v1_values[v1_variation] = { 1.2, 1.8, 2.5, 3.3, 0.95 };
-float v2_values[v2_variation] = { 1.8, 2.5, 3.3, 4.96 };
+Nts0304euk_Ard_LDO1 ldo1;
+Nts0304euk_Ard_LDO2 ldo2;
 
 void setup() {
 #ifndef SERIAL_OUT_DISABLE
@@ -90,9 +86,9 @@ void setup() {
 void loop() {
   uint8_t read_value;
 
-  for (int v1 = 0; v1 < v1_variation; v1++) {
-    for (int v2 = 0; v2 < v2_variation; v2++) {
-      if (v1_values[v1] > v2_values[v2])
+  for (int v1 = 0; v1 < Nts0304euk_Ard_LDO::v1_variation; v1++) {
+    for (int v2 = 0; v2 < Nts0304euk_Ard_LDO::v2_variation; v2++) {
+      if (ldo1.voltage(v1) > ldo2.voltage(v2))
         continue;
 
       ldo1 = v1;
