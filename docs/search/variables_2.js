@@ -4,6 +4,5 @@ var searchData=
   ['v1_5fvariation_1',['v1_variation',['../class_nts0304euk___ard___l_d_o.html#a8289c9d321b0e55e53959a6ebb566178',1,'Nts0304euk_Ard_LDO']]],
   ['v2_5fvalues_2',['v2_values',['../class_nts0304euk___ard___l_d_o.html#a64b99ca2ffd01df823713389b0a3f99a',1,'Nts0304euk_Ard_LDO']]],
   ['v2_5fvariation_3',['v2_variation',['../class_nts0304euk___ard___l_d_o.html#ab937957001cf5737a41f12d13a6de4f7',1,'Nts0304euk_Ard_LDO']]],
-  ['v_5fvalues_4',['v_values',['../class_nts0304euk___ard___l_d_o.html#ac99f2cbf6d5f5a42cc49db68f9f36f71',1,'Nts0304euk_Ard_LDO']]],
-  ['voltage_5',['voltage',['../class_nts0304euk___ard___l_d_o.html#a4c9c71e61ea39194ab809fbb06107a12',1,'Nts0304euk_Ard_LDO::voltage(void)'],['../class_nts0304euk___ard___l_d_o.html#a9f175176a9b4ebea998efaa9ddbdef7f',1,'Nts0304euk_Ard_LDO::voltage(int v)']]]
+  ['v_5fvalues_4',['v_values',['../class_nts0304euk___ard___l_d_o.html#ac99f2cbf6d5f5a42cc49db68f9f36f71',1,'Nts0304euk_Ard_LDO']]]
 ];
