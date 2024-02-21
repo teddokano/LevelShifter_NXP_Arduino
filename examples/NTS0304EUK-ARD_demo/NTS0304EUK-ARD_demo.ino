@@ -40,6 +40,8 @@
  * and "Serial.println()" will disturb the voltage. 
  * For this reason, the termial screen output is disabled in default. So nothing will be 
  * seen on screen. Check the behavior on oscilloscope. 
+ * On Arduino UNO R4, this ristriction does not exist. User can have screen message while
+ * demo running. 
  */
 
 #include "AD5161.h"

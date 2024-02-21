@@ -23,7 +23,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LevelShifter_NXP_Arduino<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">LevelShifter_NXP_Arduino<span id="projectnumber">&#160;0.9.3</span>
    </div>
    <div id="projectbrief">Temperature sensor device operation sample code for Arduino</div>
   </td>
@@ -117,10 +117,14 @@ Examples</h2>
 How to use? : Full featured demo: <code>NTS0304EUK-ARD_demo</code></h3>
 <p><b>NTS0304EUK-ARD_demo</b> is a full featured demo code. <br  />
  After library install, Choose menu on Arduino-IDE: <code>File</code>→<code>Examples</code>→<code>LevelShifter_NXP_Arduino</code>→ NTS0304EUK-ARD_demo</p>
-<p>This demo code will show <b>nothing</b> on terminal screen. Since the LDO1 output voltage is controled by D0 and D1 pins, the <code>Serial</code> API to print characters on screen disturbs the behavior. <br  />
+<p>On <b>Arduino Uno R3</b>, this demo code will show <b>nothing</b> on terminal screen. <br  />
+ Since the LDO1 output voltage is controled by D0 and D1 pins, the <code>Serial</code> API to print characters on screen disturbs the behavior. <br  />
  Again, <b>while the demo running, no screen update will be done</b>. <br  />
  <u>To perform output all voltage variation on LDO1, the screen message needed to be disabled.</u> <br  />
  While the demo, prove on the signal lines and monitor the waveform on an oscilloscope. <br  />
+</p>
+<p>On <b>Arduino Uno R4</b>, such restriction does not exist. <br  />
+ The messages will be shown on the screen. <br  />
 </p>
 <p>LDO1 and LDO2 can output several voltages. LDO1 voltage becomes the signal voltage on A-side of DUT and LDO2 voltage becomes B-side one. <br  />
 </p><ul>
